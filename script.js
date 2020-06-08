@@ -36,6 +36,7 @@ function reset() {
     }
 }
 
+//Shows the solution to the player
 function showSol() {
     var cnt = 0;
     for(var i = 1; i <= size; i++) {
@@ -111,6 +112,7 @@ function populateHints(data) {
     }
 }
 
+//Checks win condition and displays message
 function checkWin() {
     var str = "";
     for(var i = 1; i <= size; i++) {
@@ -128,6 +130,7 @@ function checkWin() {
     }
 }
 
+//Timer for player
 setInterval(timer, 1000);
 function timer() {
     document.getElementById("timer").innerHTML = time;
