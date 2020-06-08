@@ -30,6 +30,7 @@ td {
 
 .active {
     background-color: #DDDDDD;
+    transition: 0.4s;
 }
 
 button {
