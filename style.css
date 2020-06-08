@@ -1,0 +1,52 @@
+body {
+    background-color: #333333;
+    color: #DDDDDD;
+    font-family: "Montserrat", serif;
+}
+
+main {
+    width: 85%;
+    margin: auto;
+}
+
+#header {
+    width: 40%;
+    margin: auto;
+}
+
+table {
+    margin: auto;
+    border-spacing: 0;
+}
+
+td {
+    border: 1px solid black;
+    min-width: 37px;
+    height: 40px;
+    text-align: center;
+    border-width: 2px;
+    background-color: #555555;
+}
+
+.active {
+    background-color: #DDDDDD;
+}
+
+button {
+    border: 1px solid #FFFFFF;
+    background: rgba(0, 0, 0, 0.3);
+    width: 150px;
+    height: 50px;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    border-color: #2e98c3;
+    color: #2e98c3;
+    transition: 0.3s;
+    cursor: pointer;
+}
