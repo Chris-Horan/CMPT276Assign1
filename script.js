@@ -7,7 +7,7 @@ function init() {
     table = document.getElementById("gameBoard");
 
     size = 15;
-
+    time = 0;
     for(var i = 0; i < size + 1; i++) {
         table.insertRow();
     }
@@ -28,6 +28,7 @@ function init() {
 
 //Resets board to initial setup
 function reset() {
+    time = 0;
     for(var i = 0; i < size + 1; i++) {
         for(var j = 0; j < size + 1; j++) {
             table.rows[i].cells[j].className = "";
@@ -125,4 +126,10 @@ function checkWin() {
     if(data === str) {
         alert("You win.");
     }
+}
+
+setInterval(timer, 1000);
+function timer() {
+    document.getElementById("timer").innerHTML = time;
+    time += 1;
 }
